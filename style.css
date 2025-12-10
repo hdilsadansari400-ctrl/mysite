@@ -1,0 +1,170 @@
+/* ===== Universal Reset & Base Styles ===== */
+:root {
+  --primary: #0A2463;       /* Navy Blue */
+  --secondary: #D4AF37;     /* Gold */
+  --light: #FFFFFF;
+  --dark:#302323;
+  --gray: #F5F5F5;
+  --success: #388E3C;
+  --danger: #474545;
+  --pink:var(--pink);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--success);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* ===== Utility Classes (Works Everywhere) ===== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #07204d;
+  transform: translateY(-2px);
+}
+
+.card {
+  background: var(--light);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px #0804eed2;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px hsla(0, 61%, 13%, 0.751);
+}
+
+/* ===== Global Components ===== */
+/* Navigation */
+.navbar {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Product Grid (Works on all pages) */
+.product-grid {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  padding: 1rem 0;
+}
+
+.product-card {
+  composes: card; /* Inherits card styles */
+  position: relative;
+}
+
+.product-badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background: var(--secondary);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.product-image {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: 1rem;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--primary);
+  margin: 0.5rem 0;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.discount {
+  color: var(--success);
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.rating {
+  color: #FFC107;
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+  
+  .navbar .flex {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

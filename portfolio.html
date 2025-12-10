@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Gallery - ZayrahMert</title>
+    <meta name="description" content="Explore our product gallery featuring clothing, electronics, and kitchen items at ZayrahMert, Kathmandu">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="circlelogo.jpg" alt="ZayrahMert Logo" height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero Section -->
+    <header class="hero-section portfolio-hero">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center text-white">
+                    <h1 class="display-3 fw-bold mb-4">Our Product Gallery</h1>
+                    <p class="lead mb-5">Explore our collection of quality products</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Filter -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="portfolio-filter list-inline text-center mb-0">
+                        <li class="list-inline-item active" data-filter="all">All Products</li>
+                        <li class="list-inline-item" data-filter="clothing">Clothing</li>
+                        <li class="list-inline-item" data-filter="electronics">Electronics</li>
+                        <li class="list-inline-item" data-filter="kitchen">Kitchen Items</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 portfolio-grid">
+                <!-- Clothing Item 1 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="clothing">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio/clothing1.jpg" alt="Men's Casual Wear" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h4>Men's Casual Wear</h4>
+                                    <p>Comfortable cotton t-shirts and jeans collection</p>
+                                    <a href="images/portfolio/clothing1.jpg" data-lightbox="portfolio" class="btn btn-sm btn-outline-light">View Larger</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-meta p-3">
+                            <h5 class="mb-1">Men's Casual Wear</h5>
+                            <p class="text-muted mb-0">Starting from Rs. 850</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electronics Item 1 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="electronics">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio/electronics1.jpg" alt="Bluetooth Speaker" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h4>Bluetooth Speaker</h4>
+                                    <p style="color: blue;">Premium sound quality with 12hrs battery life</p>
+                                    <a href="images/portfolio/electronics1.jpg" data-lightbox="portfolio" class="btn btn-sm btn-outline-light">View Larger</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-meta p-3">
+                            <h5 class="mb-1">Bluetooth Speaker</h5>
+                            <p class="text-muted mb-0">Rs. 2,500</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kitchen Item 1 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="kitchen">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio/kitchen1.jpg" alt="Non-stick Cookware Set" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h4>Non-stick Cookware Set</h4>
+                                    <p>5-piece set for healthy cooking</p>
+                                    <a href="images/portfolio/kitchen1.jpg" data-lightbox="portfolio" class="btn btn-sm btn-outline-light">View Larger</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-meta p-3">
+                            <h5 class="mb-1">Non-stick Cookware Set</h5>
+                            <p class="text-muted mb-0">Rs. 4,800</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clothing Item 2 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="clothing">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio/clothing2.jpg" alt="Women's Ethnic Wear" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h4>Women's Ethnic Wear</h4>
+                                    <p>Traditional kurtas and sarees collection</p>
+                                    <a href="images/portfolio/clothing2.jpg" data-lightbox="portfolio" class="btn btn-sm btn-outline-light">View Larger</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-meta p-3">
+                            <h5 class="mb-1">Women's Ethnic Wear</h5>
+                            <p class="text-muted mb-0">Starting from Rs. 1,200</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electronics Item 2 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="electronics">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio/electronics2.jpg" alt="Wireless Earbuds" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h4>Wireless Earbuds</h4>
+                                    <p>Noise cancellation with 20hrs playtime</p>
+                                    <a href="images/portfolio/electronics2.jpg" data-lightbox="portfolio" class="btn btn-sm btn-outline-light">View Larger</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-meta p-3">
+                            <h5 class="mb-1">Wireless Earbuds</h5>
+                            <p class="text-muted mb-0">Rs. 3,200</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kitchen Item 2 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="kitchen">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio/kitchen2.jpg" alt="Electric Kettle" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h4>Electric Kettle</h4>
+                                    <p>1.5L capacity with auto shut-off</p>
+                                    <a href="images/portfolio/kitchen2.jpg" data-lightbox="portfolio" class="btn btn-sm btn-outline-light">View Larger</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-meta p-3">
+                            <h5 class="mb-1">Electric Kettle</h5>
+                            <p class="text-muted mb-0">Rs. 1,850</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn btn-primary px-4">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Customer Experiences</h2>
+                <p class="lead text-muted">What our customers say about our products</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="testimonial-text mb-4">"The ethnic wear I bought from ZayrahMert was perfect for the wedding season. The fabric quality exceeded my expectations."</p>
+                        <div class="testimonial-author d-flex align-items-center">
+                            <img src="images/testimonials/customer1.jpg" alt="Customer" class="rounded-circle me-3">
+                            <div>
+                                <h6 class="mb-0">Anjali Shrestha</h6>
+                                <small class="text-muted">Kathmandu</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                        <p class="testimonial-text mb-4">"The bluetooth speaker has amazing sound quality. I use it for my small parties and everyone compliments it."</p>
+                        <div class="testimonial-author d-flex align-items-center">
+                            <img src="images/testimonials/customer2.jpg" alt="Customer" class="rounded-circle me-3">
+                            <div>
+                                <h6 class="mb-0">Rajiv Gurung</h6>
+                                <small class="text-muted">Pokhara</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="testimonial-text mb-4">"The non-stick cookware set has made cooking so much easier. It heats evenly and cleans up in seconds."</p>
+                        <div class="testimonial-author d-flex align-items-center">
+                            <img src="images/testimonials/customer3.jpg" alt="Customer" class="rounded-circle me-3">
+                            <div>
+                                <h6 class="mb-0">Sunita Magar</h6>
+                                <small class="text-muted">Lalitpur</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Same footer as index.html -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <!-- Footer content from index.html -->
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <iframe src="bot/chatbot.html" style="border:none;width:100%;height:400px"></iframe>
+    
+    <!-- Portfolio Filter JS -->
+    <script>
+        // Portfolio Filter
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterItems = document.querySelectorAll('.portfolio-filter li');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            filterItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    // Remove active class from all filter items
+                    filterItems.forEach(filter => filter.classList.remove('active'));
+                    
+                    // Add active class to clicked filter item
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Show/hide portfolio items based on filter
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Initialize Lightbox
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'albumLabel': 'Image %1 of %2'
+            });
+        });
+    </script>
+   <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <iframe src="bot/chatbot.html" style="border:none;width:100%;height:500px"></iframe>
+</body>
+</html>
